@@ -22,12 +22,13 @@
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+     <!-- <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-line"></span>
         <span class="nav-toggle-line"></span>
         <span class="nav-toggle-line"></span>
         <span class="sr-only">Abrir menú</span>
       </button>
+      -->
 
       <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
         <a href="index.html">Memorial</a>
@@ -50,7 +51,9 @@
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#inscripcion">Inscribirme</a>
+              <!--
               <a class="button event-button-secondary" href="#programa">Ver programa tentativo</a>
+              -->
             </div>
           </div>
 
@@ -265,6 +268,16 @@
     </select>
   </label>
 
+   <label>
+    Modalidad de participación
+    <select name="participation" required>
+      <option value="">Seleccionar</option>
+      <option value="Presencial">Presencial</option>
+      <option value="Virtual">Virtual</option>
+    </select>
+  </label>
+            
+
   <label>
     Mensaje adicional
     <textarea
@@ -303,7 +316,9 @@
 
     <footer class="site-footer">
       <p>Coloquio conmemorativo por los 80 años de V. Miguel Peñafiel N.</p>
+      <!--
       <a href="index.html">Volver al memorial</a>
+      -->
     </footer>
 
     <script src="js/main.js"></script>
