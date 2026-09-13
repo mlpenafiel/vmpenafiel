@@ -213,36 +213,80 @@
             <h3 id="registration-title">Confirmar asistencia o interés en participar</h3>
           </div>
 
-          <form class="registration-form" data-event-form>
-            <label>
-              Nombre completo
-              <input type="text" name="name" autocomplete="name" required />
-            </label>
-            <label>
-              Correo electrónico
-              <input type="email" name="email" autocomplete="email" required />
-            </label>
-            <label>
-              Institución o relación con el homenajeado
-              <input type="text" name="affiliation" placeholder="Universidad, estudiante, colega, familia..." required />
-            </label>
-            <label>
-              Tipo de participación
-              <select name="participation" required>
-                <option value="">Seleccionar</option>
-                <option>Asistente</option>
-                <option>Quisiera proponer una charla</option>
-                <option>Quisiera compartir un testimonio</option>
-                <option>Represento a una institución</option>
-              </select>
-            </label>
-            <label>
-              Mensaje adicional
-              <textarea name="message" rows="5" placeholder="Cuéntanos si deseas participar, enviar material o recibir novedades."></textarea>
-            </label>
-            <button class="button button-primary" type="submit">Preparar inscripción</button>
-            <p class="form-note" data-event-form-note aria-live="polite"></p>
-          </form>
+          <form
+  class="registration-form"
+  action="https://formspree.io/f/xdeorkno"
+  method="POST"
+>
+  <label>
+    Nombre completo
+    <input
+      type="text"
+      name="name"
+      autocomplete="name"
+      required
+    />
+  </label>
+
+  <label>
+    Correo electrónico
+    <input
+      type="email"
+      name="email"
+      autocomplete="email"
+      required
+    />
+  </label>
+
+  <label>
+    Institución o relación con el homenajeado
+    <input
+      type="text"
+      name="affiliation"
+      placeholder="Universidad, estudiante, colega, familia..."
+      required
+    />
+  </label>
+
+  <label>
+    Tipo de participación
+    <select name="participation" required>
+      <option value="">Seleccionar</option>
+      <option value="Asistente">Asistente</option>
+      <option value="Propuesta de charla">
+        Quisiera proponer una charla
+      </option>
+      <option value="Testimonio">
+        Quisiera compartir un testimonio
+      </option>
+      <option value="Institución">
+        Represento a una institución
+      </option>
+    </select>
+  </label>
+
+  <label>
+    Mensaje adicional
+    <textarea
+      name="message"
+      rows="5"
+      placeholder="Cuéntanos si deseas participar, enviar material o recibir novedades."
+    ></textarea>
+  </label>
+
+  <input
+    type="hidden"
+    name="_subject"
+    value="Nueva inscripción al coloquio del Dr. Miguel Peñafiel"
+  />
+
+  <button
+    class="button button-primary"
+    type="submit"
+  >
+    Enviar inscripción
+  </button>
+</form>
         </div>
       </section>
 <hr class="white-line">
